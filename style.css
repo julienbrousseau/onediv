@@ -1,0 +1,61 @@
+body {
+    background-color: hsl(271, 20%, 90%);
+    display: flex;
+    margin: 0;
+    justify-content: space-around;
+}
+div {
+    align-self: center;
+    width: 150px;
+    height: 180px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-image:
+        linear-gradient(to bottom, hsla(34, 85%, 25%, 0.9) 0%, hsla(34, 85%, 25%, 0.9) 20%, transparent 25%),
+        linear-gradient(to right, hsl(34, 75%, 30%), hsl(34, 45%, 65%) 70%, hsl(34, 60%, 50%))        
+    ;
+    transform: perspective(50px) rotateX(-3deg);
+    box-shadow: 0px 0px 60px 10px grey;
+
+    border-radius: 90px / 10px;
+}
+div:after {
+    content: ' ';
+    display: inline-block;
+    position: relative;
+    top:-245px;
+    left:-5px;
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    border-bottom-left-radius: 60px 10px;
+    border-bottom-right-radius: 60px 10px;
+    background-image:
+        radial-gradient( circle farthest-side at center -450px, transparent 99.2%, hsla(34, 85%, 25%, 0.9) 99.9%),
+
+        linear-gradient(to right, hsl(34, 75%, 30%), hsl(34, 45%, 65%) 70%, hsl(34, 60%, 50%))    
+    ;
+    transform: perspective(50px) rotateX(3deg);
+
+}
+div:before {
+    content: ' ';
+    position: relative;
+    display: inline-block;
+    background-repeat: space;
+    top:-230px;
+    left: 25px;
+    width: 100px;
+    height: 250px;
+    border-radius: 50% / 50%;
+    transform-origin: 50% 305px;
+    transform: perspective(50px) rotateX(3deg) rotateZ(-10deg);
+    
+    background-image:
+    radial-gradient(#f2f2f2 0%, #f2f2f2 14%, transparent 15%),
+    radial-gradient(#aaaaaa 0%, #aaaaaa 14%, transparent 15%),
+    radial-gradient(farthest-corner at center 50%, transparent 10%, hsla(130, 35%, 0%, 0.4) 95%),
+    radial-gradient(farthest-corner at center 85%, hsla(83, 32%, 55%, 1) 0%, hsl(130, 35%, 32%) 100%);
+    background-size: 7px 7px, 4px 4px, 100px 250px, 100px 250px;  
+    box-shadow: 0px 0px 60px 10px grey;
+}
