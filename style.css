@@ -32,11 +32,8 @@ div:after {
     border-bottom-right-radius: 60px 10px;
     background-image:
         radial-gradient( circle farthest-side at center -450px, transparent 99.2%, hsla(34, 85%, 25%, 0.9) 99.9%),
-
-        linear-gradient(to right, hsl(34, 75%, 30%), hsl(34, 45%, 65%) 70%, hsl(34, 60%, 50%))    
-    ;
+        linear-gradient(to right, hsl(34, 75%, 30%), hsl(34, 45%, 65%) 70%, hsl(34, 60%, 50%));
     transform: perspective(50px) rotateX(3deg);
-
 }
 div:before {
     content: ' ';
@@ -53,9 +50,9 @@ div:before {
     
     background-image:
     radial-gradient(#f2f2f2 0%, #f2f2f2 14%, transparent 15%),
-    radial-gradient(#aaaaaa 0%, #aaaaaa 14%, transparent 15%),
+    radial-gradient(#ccc 0%, #ccc 14%, transparent 15%),
     radial-gradient(farthest-corner at center 50%, transparent 10%, hsla(130, 35%, 0%, 0.4) 95%),
     radial-gradient(farthest-corner at center 85%, hsla(83, 32%, 55%, 1) 0%, hsl(130, 35%, 32%) 100%);
-    background-size: 7px 7px, 4px 4px, 100px 250px, 100px 250px;  
+    background-size: 8px 8px, 6px 6px, 100px 250px, 100px 250px;  
     box-shadow: 0px 0px 60px 10px grey;
 }
